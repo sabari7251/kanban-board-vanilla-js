@@ -30,7 +30,8 @@ A Trello-like Kanban board built using **Vanilla JavaScript**, featuring drag-an
 
 ## Demo
 Live demo (optional):  
-👉 https://your-username.github.io/kanban-board-vanilla-js/
+https://sabari7251.github.io/kanban-board-vanilla-js/
 
 ##  How to Run
 Just open `index.html` using Live Server or any local server.
+
