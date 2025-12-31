@@ -1,0 +1,108 @@
+
+body {
+    background-color: #f3f4f6;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+
+.kanban
+{
+    width: 70%;
+    display: flex;
+    background-color: #258169;
+    padding: 30px;
+    border-radius: 5px;
+    margin-left: 10vw;
+    margin-top: 10vh;
+}
+
+.kanban__column
+{
+    flex: 1;
+    margin-right: 20px;
+}
+
+.kanban__column-title
+{
+    color: white;
+    margin-bottom: 20px;
+    font-size: 30px;
+    user-select: none;
+    font-weight: bold;
+}
+.kanban__items {
+    min-height: 40px;      
+    padding-bottom: 10px;
+}
+
+.kanban__item-edit
+{
+    outline: none;
+    padding: 10px;       
+    padding-right: 25px;     
+    min-height: 40px;         
+    background-color: #fff;  
+    border-radius: 5px;       
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+    cursor: text;       
+    word-break: break-word;
+}
+.kanban__delete
+{
+    position: absolute;
+    right: 8px;
+    left: 6px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: red;
+}
+.kanban__item-input
+{
+    padding: 10px 15px;
+    margin-bottom: 30px;
+    background: white;
+    cursor: pointer;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding-right: 50px;
+    transition: background 0.2s, transform 0.15s, box-shadow 0.15s;
+}
+
+.kanban__item-input:hover {
+    background: #f9f9f9;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+    transform: translateY(-1px);
+}
+.kanban__item-input:active {
+    cursor: grabbing;
+    opacity: 0.85;
+}
+.kanban__item-input[contenteditable="true"] {
+    outline: 2px solid #009578;
+    background: #fff;
+}
+
+.kanban__dropzone
+{
+    height: 10px;
+    transition: background 0.15s, height 0.15s;
+}
+
+.kanban__dropzone--active
+{
+    height: 20px;
+    background: rgba(0,0,0,0.25);
+}
+
+.kanban__add-item
+{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: white;
+    background: rgba(0,0,0,0.1);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
